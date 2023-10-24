@@ -23,8 +23,16 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html {
+    font-family: 'Open Sans';
+}
 body {
 	line-height: 1;
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 ol, ul {
 	list-style: none;
@@ -42,57 +50,80 @@ table {
 	border-spacing: 0;
 }
 img{
-    
-    width: 17em;
-    height: auto;
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .container{
+    background-color: #F0F7EE;
     display:flex;
-    border-radius: 5px;
+    border-radius: 10px;
+    align-self: center;
+    padding: 15px 20px;
+    max-width: 960px;
+    text-align: center;
 }
 
-.price-category{
+.pricing-plan{
     display:flex;
     flex-direction: column;
     align-items: center;
+    
 }
-.type{
+
+.pricing-header{
     color:gray;
     font-size: 20px;
     margin-top:1em;
     margin-bottom:2em;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
-.details p{
+.pricing-features{
+    margin-bottom: 50px 0 25px;
+    color: #016ff9;
+}
+.pricing-features-item{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
     border-top: 1px solid gray;
+    padding: 15px 0 ;
+
+}
+.pricing-features-item:nth-child(2){
     border-bottom: 1px solid gray;
-    padding: 10px;
-    text-align:center;
 
 }
-.details{
-    margin-bottom: 2em;
+.pricing-price{
+    padding-top: 25px;
+    display:block;
+    font-size: 32px;
+    font-weight: 700;
+    color:#016ff9;
+}
+.button{
+    border: 1px solid #60a9ff;
+    border-radius: 10px;
+    color:#016ff9;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+}
+.button.is-featured{
+    background-color: #016ff9;
+    color:#F0F7EE;
+}
+.button:hover{
+    background-color: #60a9ff;
+    color:#F0F7EE;
+    transition-duration: 0.5s;
 }
 
-.price{
-    color:blue;
-    padding-bottom: 1em;
-    font-size:25px;
-}
-.btn{
-    background-color: #F0F7EE;
-    border-color: #3E6990;
-    color:#3E6990;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 5px;
-    margin-bottom: 2em;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .container{
         flex-direction: column;
     }
@@ -101,6 +132,12 @@ img{
     }
     .btn{
         margin-top: 2em;
+    }
+    .pricing-plan{
+        border-bottom: 1px solid #3E6990;
+    }
+    .pricing-plan:last-child{
+        border-bottom: none;
     }
     
 }

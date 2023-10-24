@@ -3,50 +3,43 @@
 <head>
     <title>Pricing Panel</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="menu">
-        <div class="container">
-            <div class="price-category" id="free">
-                <img src="icons/icon1.png" alt="woman">
-                <h1 class="type">
-                    PERSONAL
-                </h1>
-                <div class="details">
-                    <p>Custom Domains</p>
-                    <p>Sleeps after 30 mins of inactivity</p>
-                </div>
-                <h2 class="price">FREE</h1>
-                <button class="btn">SIGN UP</button>  
-            </div>
-            <div class="price-category" id="small">
-                <img src="icons/icon2.png" alt="man and woman">
-                <h1 class="type">
-                    SMALL TEAM
-                </h1>
-                <div class="details">
-                    <p>NEVER SLEEPS</p>
-                    <p>MULTPLE WORKERS FOR MORE POWERFUL APPS</p>
-                </div>
-                <h2 class="price">$150</h1>
-                <button class="btn">FREE TRIAL</button>  
-            </div>
-            <div class="price-category" id="enterprise">
-                <img src="icons/icon3.png" alt="3 people">
-                <h1 class="type">
-                    ENTERPRISE
-                </h1>
-                <div class="details">
-                    <p>DEDICATED</p>
-                    <p>SIMPLE HORIZONTAL SCALABILITY</p>
-                </div>
-                <h2 class="price">$400</h1>
-                <button class="btn">FREE TRIAL</button>  
-            </div>
-    
+    <div class="container">
+        <div class="pricing-plan" id="free">
+            <img src="icons/icon1.png" alt="woman">
+            <h1 class="pricing-header">PERSONAL</h1>
+            <ul class="pricing-features">
+                <li class="pricing-features-item">Custom Domains</li>
+                <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
+            </ul>
+            <span class="pricing-price">FREE</span>
+            <a href="#" class="button">SIGN UP</a>  
+        </div>
+        <div class="pricing-plan" id="small">
+            <img src="icons/icon2.png" alt="man and woman">
+            <h1 class="pricing-header">SMALL TEAM</h1>
+            <ul class="pricing-features">
+                <li class="pricing-features-item">NEVER SLEEPS</li>
+                <li class="pricing-features-item">MULTPLE WORKERS FOR MORE POWERFUL APPS</li>
+            </ul>
+            <span class="pricing-price">$150</span>
+            <a href="#" class="button is-featured">FREE TRIAL</a>
+        </div>
+        <div class="pricing-plan" id="enterprise">
+            <img src="icons/icon3.png" alt="3 people">
+            <h1 class="pricing-header">ENTERPRISE</h1>
+            <ul class="pricing-features">
+                <li class="pricing-features-item">DEDICATED</li>
+                <li class="pricing-features-item">SIMPLE HORIZONTAL SCALABILITY</li>
+            </ul>
+            <span class="pricing-price">$400</span>
+            <a href="#" class="button">FREE TRIAL</a>
         </div>
     </div>
-
 </body>
 
